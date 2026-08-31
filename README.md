@@ -1,7 +1,7 @@
-# Hi there, I'm [Your Name] 👋
+# Hi there, I'm [Suryaa V S] 👋
 ### Aspiring Java Full Stack Developer
 
-- 🔭 **Current Focus:** Core Java (OOPs, Collections, Multithreading) & Database Engineering (SQL/MySQL)
+- 🔭 **Current Focus:** Core Java (OOPs, Collections, Multithreading)
 - 🌱 **Currently Learning:** JDBC, Advanced Java, and Data Structures & Algorithms
 - 🎯 **Target:** Full Stack Development with Spring Boot, Microservices, and React
 - 💬 **Ask me about:** Java OOPs concepts, Relational Database Design, SQL Query Optimization
