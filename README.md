@@ -1,24 +1,32 @@
-# Hi there, I'm [Suryaa V S] 👋
-### Aspiring Java Full Stack Developer
+# SQL Mastery & Relational Database Architecture
 
-- 🔭 **Current Focus:** Core Java (OOPs, Collections, Multithreading)
-- 🌱 **Currently Learning:** JDBC, Advanced Java, and Data Structures & Algorithms
-- 🎯 **Target:** Full Stack Development with Spring Boot, Microservices, and React
-- 💬 **Ask me about:** Java OOPs concepts, Relational Database Design, SQL Query Optimization
-- 📫 **Connect with me:** [LinkedIn](https://linkedin.com/in/suryaavs) | [Email](suryaavs.tn@gmail.com)
+A structured repository containing normalized relational schemas, analytical queries, performance optimization techniques, and real-world case studies in MySQL.
 
 ---
 
-### 🛠️ Tech Stack & Tools
+## 📁 Repository Structure
 
-**Languages & Backend:**
-![Java](https://img.shields.io/badge/Java-ED8B00?style=for-the-badge&logo=openjdk&logoColor=white)
-![Python](https://img.shields.io/badge/Python-3776AB?style=for-the-badge&logo=python&logoColor=white)
+- **`01-schema-design/`**: DDL scripts covering primary/foreign keys, constraints, and 1NF/2NF/3NF database normalization.
+- **`02-dml-and-crud-operations/`**: Data manipulation operations, transactional safety, and batch record handling.
+- **`03-joins-and-subqueries/`**: Multi-table relationships (`INNER`, `LEFT`, `RIGHT`), correlated subqueries, and nested data filtering.
+- **`04-aggregations-and-grouping/`**: Grouping operations (`GROUP BY`, `HAVING`), window metrics, and revenue analytics.
+- **`05-advanced-sql-objects/`**: Stored procedures, views, indexing strategies, and query optimization (`EXPLAIN`).
+- **`case-studies/`**: End-to-end industry schemas (E-commerce order fulfillment & inventory tracking).
 
-**Databases:**
-![MySQL](https://img.shields.io/badge/MySQL-005C84?style=for-the-badge&logo=mysql&logoColor=white)
-![Oracle](https://img.shields.io/badge/Oracle-F80000?style=for-the-badge&logo=oracle&logoColor=white)
+---
 
-**Tools & Platforms:**
-![Git](https://img.shields.io/badge/Git-F05032?style=for-the-badge&logo=git&logoColor=white)
-![GitHub](https://img.shields.io/badge/GitHub-181717?style=for-the-badge&logo=github&logoColor=white)
+## 🛠️ Tech Stack & Tools
+- **RDBMS:** MySQL / Oracle SQL
+- **Concepts:** Relational Integrity, Indexing, Transaction Management (ACID), Schema Optimization
+
+---
+
+## 🚀 How to Run Locally
+
+```bash
+# Clone the repository
+git clone [https://github.com/stylishsuryaa/sql.git](https://github.com/stylishsuryaa/sql.git)
+cd sql
+
+# Run any script directly in MySQL CLI
+mysql -u root -p < case-studies/ecommerce_order_management.sql
