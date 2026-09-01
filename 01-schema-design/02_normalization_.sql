@@ -1,10 +1,23 @@
-USE student_db;
+CREATE DATABASE IF NOT EXISTS college_db;
+USE college_db;
 
--- Add a new column
-ALTER TABLE students ADD COLUMN phone VARCHAR(15);
+-- Normalized 3NF Schema: Students & Courses
 
--- Modify column datatype
-ALTER TABLE students MODIFY COLUMN name VARCHAR(100);
+CREATE TABLE students (
+    student_id INT PRIMARY KEY AUTO_INCREMENT,
+    student_name VARCHAR(50) NOT NULL
+);
 
--- Drop a column
-ALTER TABLE students DROP COLUMN phone;
+CREATE TABLE courses (
+    course_id INT PRIMARY KEY AUTO_INCREMENT,
+    course_name VARCHAR(50) NOT NULL
+);
+
+-- Junction table to remove Many-to-Many redundancy
+CREATE TABLE student_courses (
+    enrollment_id INT PRIMARY KEY AUTO_INCREMENT,
+    student_id INT,
+    course_id INT,
+    FOREIGN KEY (student_id) REFERENCES students(student_id),
+    FOREIGN KEY (course_id) REFERENCES courses(course_id)
+);
