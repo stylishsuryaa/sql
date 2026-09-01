@@ -1,4 +1,4 @@
-# SQL Mastery & Relational Database Architecture
+# Zero-to-Hero SQL Reference: Normalized Schemas, Query Patterns & Case Studies.
 
 A structured repository containing normalized relational schemas, analytical queries, performance optimization techniques, and real-world case studies in MySQL.
 
