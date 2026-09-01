@@ -21,6 +21,20 @@ A structured repository containing normalized relational schemas, analytical que
 
 ---
 
+```mermaid
+erDiagram
+    CUSTOMERS ||--o{ ORDERS : places
+    CUSTOMERS {
+        int id PK
+        string name
+    }
+    ORDERS {
+        int id PK
+        int customer_id FK
+        decimal total
+    }
+```
+
 ## 🚀 How to Run Locally
 
 ```bash
